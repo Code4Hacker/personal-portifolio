@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import jQuery from 'jquery';
-import logo from '../../images/logo.png'
 import './nav.css';
 const Navbar = () => {
     window.onscroll = function(){
