@@ -1,0 +1,93 @@
+.crd{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:var(--drk-g);
+    margin: 10px;
+    font-size: small;
+    color: var(--light);
+}
+.foil{
+    width: 100%;
+    position: relative;
+    height: 230px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.foil .shadows{
+    position: absolute;
+    width: 100%;
+    display: none;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(10px);
+    z-index: 4;
+    animation:.4s fadeIn ease-in-out;
+}
+.foil:hover .shadows{
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(10px);
+    z-index: 4;
+}
+.foil img{
+    position: relative;
+    z-index: 1;
+}
+
+.foil .button{
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: var(--light);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--dark);
+}
+.foil .button:hover{
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: var(--dark);
+    background-color: var(--pink-2);
+    color: var(--wt);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.crd img{
+    position: relative;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.crd .description{
+    margin: 10px;
+}
+.crd h3{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.LBTN{
+    color: white;
+    background-color: var(--blue);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.LBTN:hover{
+    color: rgb(255, 255, 255);
+    background-color: var(--pink);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+}

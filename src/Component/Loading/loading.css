@@ -1,0 +1,47 @@
+.loading{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin: 10px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border:5px solid var(--drk-g);
+    animation: 2s rotate linear infinite;
+    border-right-color:var(--blue-2) ;
+    border-top-color:var(--pink-2) ;
+    border-bottom-color:var(--pink) ;
+    border-left-color:var(--blue) ;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
