@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import UseFetch from '../../Hooks/useFetch';
 import ShowCase from '../ShowCase/ShowCase';
 import Loading from '../../Loading/loading';
-import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon } from '../../images/icons/index';
+import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon } from '../../images/icons/index';
 import 'aos/dist/aos.css';
 import jQuery from 'jquery';
 import AOS from 'aos';
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-xl-9 mrg-100-top">
+            <div className="col-xl-9 mrg-40-top">
               <div className="headline">
                 <h1 className='title' data-aos="zoom-in">upgrading your Skills with <span className='gradient'>Tutorial</span> video from my You<span className='gradient red'>tube</span></h1>
               </div>
@@ -61,6 +61,16 @@ const Home = () => {
             </div>
           </div> : ''
           }
+              <div className="row">
+            <div className="col-xl-9">
+              <div className="headline">
+                <h1 className='title' data-aos="zoom-in"><span className="gradient">This are the </span> few of m y <span className='gradient'>Badges</span> that I win from  <span className="gradient">Defferent Academies </span><span className='red'></span> </h1>
+              </div>
+            </div>
+            <div className="col-md-8 center">
+            <div data-iframe-width="200" data-iframe-height="570" data-share-badge-id="5d6585a4-be08-47ea-93b1-c651488fdee6" data-share-badge-host="https://www.credly.com" className="col-md-8 xx"></div>
+            </div>
+          </div>
           <div className="row mrg-100-btn">
             <div className="col-xl-9">
               <div className="headline">
@@ -82,6 +92,7 @@ const Home = () => {
                   <img src={reactIcon} alt="" className="skills" />
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
+                  <div className="basic">Basic</div>
                   <img src={gitIcon} alt="" className="skills" />
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
@@ -100,19 +111,29 @@ const Home = () => {
                   <img src={cssIcon} alt="" className="skills" />
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
+                  <div className="basic">Basic</div>
                   <img src={linuxIcon} alt="" className="skills"/>
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
+                  <div className="basic">Basic</div>
                   <img src={phpIcon} alt="" className="skills"/>
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
+                  <div className="basic">Basic</div>
                   <img src={pythonIcon} alt="" className="skills"/>
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
+                  <div className="basic">Basic</div>
                   <img src={nodeIcon} alt="" className="skills"/>
                 </div>
                 <div className="col-2 skill" data-aos="zoom-in">
                   <img src={reactIcon2} alt="" className="skills"/>
+                </div>
+                <div className="col-2 skill" data-aos="zoom-in">
+                  <img src={sanityIcon} alt="" className="skills sanity"/>
+                </div>
+                <div className="col-2 skill" data-aos="zoom-in">
+                  <img src={cppIcon} alt="" className="skills"/>
                 </div>
 
               </div>

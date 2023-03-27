@@ -12,7 +12,9 @@ import pythonIcon from './file-type-python.svg';
 import phpIcon from './php.svg';
 import linuxIcon from './linux.svg';
 import nodeIcon from './icons8-nodejs-48.png';
+import cppIcon from './icons8-c++-480.png';
+import sanityIcon from './sanity.png';
 
 export {
-    reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon
+    reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon,sanityIcon,cppIcon
 }
