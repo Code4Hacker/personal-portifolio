@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import UseFetch from '../../Hooks/useFetch';
 import ShowCase from '../ShowCase/ShowCase';
 import Loading from '../../Loading/loading';
-import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon } from '../../images/icons/index';
+import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon, barge } from '../../images/icons/index';
 import 'aos/dist/aos.css';
 import jQuery from 'jquery';
 import AOS from 'aos';
@@ -67,8 +67,14 @@ const Home = () => {
                 <h1 className='title' data-aos="zoom-in"><span className="gradient">This are the </span> few of m y <span className='gradient'>Badges</span> that I win from  <span className="gradient">Defferent Academies </span><span className='red'></span> </h1>
               </div>
             </div>
-            <div className="col-md-8 center">
-            <div data-iframe-width="200" data-iframe-height="570" data-share-badge-id="5d6585a4-be08-47ea-93b1-c651488fdee6" data-share-badge-host="https://www.credly.com" className="col-md-8 xx"></div>
+            <div className="col-md-12">
+            <div className='row'>
+            <div className="col-1 barge">
+            <a  href="https://www.credly.com/badges/5d6585a4-be08-47ea-93b1-c651488fdee6/public_url" target="_blank" rel="noopener noreferrer"  className="image">
+                  <img src={barge} alt="Cisco Network" />
+                </a>
+            </div>
+            </div>
             </div>
           </div>
           <div className="row mrg-100-btn">

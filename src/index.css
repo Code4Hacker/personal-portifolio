@@ -34,3 +34,29 @@
     background-color: var(--pink);
     border-radius: 50px;
 }
+.barge{
+    width: 180px;
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+.barge .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.barge img{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
