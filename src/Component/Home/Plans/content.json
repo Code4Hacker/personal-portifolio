@@ -1,0 +1,58 @@
+[
+    {
+        "image": "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "headline": "Personal Portifolio",
+        "technology": [
+            {
+                "icon": "https://cdn.lordicon.com/ppezgpha.json",
+                "text": "HTML,CSS, PureJS, PHP & ReactJS"
+            },
+            {
+                "icon": "https://cdn.lordicon.com/nmuewaiy.json",
+                "text": "Restful API"
+            },
+            {
+                "icon": "https://cdn.lordicon.com/ilwncwjc.json",
+                "text": "Sanity.io, Strapi Headless & Mysqli"
+            }
+        ],
+        "price_usd":165.2
+    },{
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "headline": "Faster and Cheap Ecommerce",
+        "technology": [
+            {
+                "icon": "https://cdn.lordicon.com/ppezgpha.json",
+                "text": "HTML,CSS, PureJS,ReactJS & NextJS"
+            },
+            {
+                "icon": "https://cdn.lordicon.com/nmuewaiy.json",
+                "text": "Restful API & Graphql"
+            },
+            {
+                "icon": "https://cdn.lordicon.com/ilwncwjc.json",
+                "text": "Sanity.io"
+            }
+        ],
+        "price_usd":260.8
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80",
+        "headline": "Companies and Advertisments",
+        "technology": [
+            {
+                "icon": "https://cdn.lordicon.com/ppezgpha.json",
+                "text": "HTML,CSS, PureJS, PHP & ReactJS"
+            },
+            {
+                "icon": "https://cdn.lordicon.com/nmuewaiy.json",
+                "text": "Restful API"
+            },
+            {
+                "icon": "https://cdn.lordicon.com/ilwncwjc.json",
+                "text": "Sanity.io, Strapi Headless & Mysqli"
+            }
+        ],
+        "price_usd":347.8
+    }
+]

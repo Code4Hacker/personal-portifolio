@@ -15,6 +15,7 @@ import nodeIcon from './icons8-nodejs-48.png';
 import cppIcon from './icons8-c++-480.png';
 import sanityIcon from './sanity.png';
 import barge from '../barge.png';
+import ecommerceImg from "../domino-164_6wVEHfI-unsplash.jpg";
 export {
-    reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon,sanityIcon,cppIcon,  barge
+    reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon,sanityIcon,cppIcon,  barge, ecommerceImg
 }

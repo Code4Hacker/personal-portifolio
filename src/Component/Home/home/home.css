@@ -25,6 +25,26 @@
     background-color: rgba(0, 0, 0, 0.082);
     backdrop-filter: blur(0px);
 }
+.plan{
+    width: 300px;
+    height: 400px;
+    text-align: start !important;
+    padding: 10px;
+    align-items: start;
+    justify-items: start;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    margin: 10px;
+}
+.plan .items{
+    padding: 10px;
+    font-size: small;
+    margin: 10px;
+}
+.plan h2{
+    font-size: 18px;
+    text-transform: uppercase;
+}
 .red{
     background: linear-gradient(90deg,var(--pink),red) !important;
     background-clip: text !important;
@@ -157,6 +177,35 @@
     left: 38%;
     top: 0px;
     text-transform: uppercase;
+}
+.card_Case .description h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+
+}
+.card_Case .description{
+    text-align: center;
+}
+.card_Case ul li{
+    list-style: none;
+    margin-left: -10px;
+    text-align: center;
+    display: flex;
+    gap: 4;
+}
+.card_Case span{
+    margin-top: 5px;
+}
+.LBTN{
+    border: none;
+    outline: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }
 @media screen and (max-width:826px) {
     .banner h1{
