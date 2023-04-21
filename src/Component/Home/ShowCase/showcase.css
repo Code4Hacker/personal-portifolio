@@ -33,7 +33,7 @@
     backdrop-filter: blur(10px);
     z-index: 4;
 }
-.foil iframe, .card img{
+.foil iframe, .foil img{
     position: relative;
     z-index: 1;
 }
@@ -63,7 +63,7 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-.crd iframe, .card img{
+.crd iframe, .crd img{
     position: relative;
     width: 100%;
     height: 230px;
