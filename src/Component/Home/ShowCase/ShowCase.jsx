@@ -1,6 +1,5 @@
 import React from 'react';
 import './showcase.css';
-import { Link } from 'react-router-dom';
 import Loading from '../../Loading/loading';
 
 const ShowCase = ({ result }) => {
@@ -9,7 +8,7 @@ const ShowCase = ({ result }) => {
     <div className="col-md-4 crd mrg-10-10" data-aos="zoom-in">
       <div className="foil">
         {!result ? <Loading /> : <div>
-          <iframe src={`${video}`} alt="" autoPlay controls /></div>}
+          <iframe src={`${video}`} title={result.attributes.title}/></div>}
 
       </div>
       <div className="description">
