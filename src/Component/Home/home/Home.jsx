@@ -21,7 +21,6 @@ const Home = () => {
       });
     }, 1000);
   }
-  console.log(plans);
   const { post } = UseFetch(API_URL);
   useEffect(() => { preLoader() }, []);
   return (

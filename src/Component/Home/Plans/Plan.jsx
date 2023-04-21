@@ -15,6 +15,7 @@ const Plan = ({ content }) => {
             </div>
             <div className="description">
                 <h3 data-aos="zoom-in" className='gradient'>{headline}</h3>
+                <p>{`${price_usd*2300} TZS`}</p>
                 <h1>{`${price_usd} USD`}</h1>
                 <div className={`readmore ${displayer ? "hide" : "show"}`}>
                     <p data-aos="zoom-in">Technologies</p>
