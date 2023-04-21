@@ -30,7 +30,7 @@ const Home = () => {
           <div className="intro transform-translate-50-30">
             <div className="col-xl-12">
               <h1 className='animate__animated animate__zoomIn animate__delay-3s'>Launch and Create your web application <span className="gradient">Gemini Website</span> now.</h1>
-              <p className=' animate__animated animate__zoomIn animate__delay-4s' data-aos="zoom-in">Interested with Programming languages. I have almost like Three ( 3 ) years of Experience as a Front-end developer working with different Platform. And now here on 2023 I am a student at <span className='gradient'>The University of Dodoma </span> Taking a degree in Bachelor of Science in <span className='gradient'>Computer Science.</span></p>
+              <p className=' animate__animated animate__zoomIn animate__delay-4s' data-aos="zoom-in">Interested with Programming languages. I have almost like Four ( 4 ) years of Experience as a Front-end developer working with different Platform. And now here on 2023 I am a student at <span className='gradient'>The University of Dodoma </span> Taking a degree in Bachelor of Science in <span className='gradient'>Computer Science.</span></p>
 
               <div className="button animate__animated animate__zoomIn animate__delay-5s">
                 <button data-aos="zoom-in">Watch Projects</button>
