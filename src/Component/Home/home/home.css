@@ -283,7 +283,7 @@
     width: 100%;
     border-radius: 10px;
     height: 300px;
-    scrolling: no;
+    
 }
 
 .textme {
@@ -295,7 +295,7 @@
 
 .textme input,
 .textme textarea {
-    background-color: rgba(255, 255, 255, 0.336);
+    background-color: rgba(224, 224, 224, 0.808);
     border: none;
     box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.342);
     text-align: center;
@@ -333,7 +333,23 @@
     background: black;
     width: 100px;
 }
-
+.box_contact {
+    background-color: rgb(158, 0, 0);
+    padding: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+.box_contact iframe,.box_contact input,.box_contact textarea{
+    border-radius: 50px;
+}.box_contact iframe{
+    border-radius: 100px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.mrg-btn-100{
+    margin-bottom: 100px;
+}
 @media screen and (max-width:991px) {
     .contact .clipper {
         width: 150px;
@@ -492,7 +508,22 @@
     .banner h1 {
         font-size: 2em;
     }
-
+    .box_contact {
+        background-color: rgb(158, 0, 0);
+        padding: 0px;
+        background: linear-gradient(-60deg, purple, rgb(158, 0, 0));
+        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        overflow: hidden;
+    }
+    .box_contact iframe,.box_contact input,.box_contact textarea{
+        border-radius: 50px;
+    }.box_contact iframe{
+        border-radius: 50px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
     .contact img {
         width: 250px;
         border-radius: 10px;

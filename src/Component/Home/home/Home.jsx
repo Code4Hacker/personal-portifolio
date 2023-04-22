@@ -168,7 +168,7 @@ const Home = () => {
               <img src={ecommerceImg} alt="" />
             </div>
             <div className="col-md-6">
-              <h1 className="title gradient">
+              <h1 className="title gradient mrg-btn-100">
                 Contact Me
               </h1>
               <div className="box_contact">
