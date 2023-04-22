@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
 import UseFetch from '../../Hooks/useFetch';
@@ -21,8 +21,31 @@ const Home = () => {
       });
     }, 1000);
   }
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
   const { post } = UseFetch(API_URL);
-  useEffect(() => { preLoader() }, []);
+  
+  useEffect(() => { 
+    preLoader();
+    window.onkeydown = function(){
+      const newAtr = document.createElement("div");
+      if(name.length > 6 && email.length > 9 && text.length > 20){
+        jQuery(".textme a").fadeIn({
+          duration:1000,
+          easing:'linear'
+        });
+        newAtr.innerHTML = "";
+      }else{
+        jQuery(".textme a").fadeOut({
+          duration:1000,
+          easing:'linear'
+        });
+        newAtr.innerHTML = "name must be > 6 and text > 20 or Email not valid!";
+        document.querySelector(".error").innerHTML=newAtr.innerHTML;
+      }
+    } 
+  }, [name,email,text]);
   return (
     <div className='home mrg-100-btn'>
       <div className="banner">
@@ -175,20 +198,21 @@ const Home = () => {
                 <div className="maploc">
                   <iframe src="https://maps.google.com/maps?q=cive hostels block 4&t=&z=10&ie=UTF8&iwloc=&output=embed" frameBorder="0" title='Frame Map'></iframe>
                 </div>
-                {/* <div className="location">
+                <form>
+                  <div className="error">
 
-                  <span>Location:</span><span>The University of Dodoma (CIVE) - Tanzania</span>
-                </div> */}
-                <div className="textme">
-                  <input type="text" placeholder='Name' />
-                  <input type="text" placeholder='Email' />
-                </div>
-                <div className="textme">
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div className="textme">
-                  <button><span className='gradient'>WhatsApp</span></button>
-                </div>
+                  </div>
+                  <div className="textme">
+                    <input type="text" placeholder='Name'  required value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input type="email" placeholder='Email'  required value={email} onChange={(e) => setEmail(e.target.value)}/>
+                  </div>
+                  <div className="textme">
+                    <textarea name="" id="" cols="30" rows="10" required placeholder='write a message' value={text} onChange={(e) => setText(e.target.value)}></textarea>
+                  </div>
+                  <div className="textme">
+                    <a href={`https://api.whatsapp.com/send/?phone=255628272363&text=Name:${name},Email:${email}, info: ${text}`}><span className='gradient'>WhatsApp</span></a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
