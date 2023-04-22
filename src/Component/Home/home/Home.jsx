@@ -1,10 +1,10 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
 import UseFetch from '../../Hooks/useFetch';
 import ShowCase from '../ShowCase/ShowCase';
 import Loading from '../../Loading/loading';
-import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon, barge } from '../../images/icons/index';
+import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon, barge, ecommerceImg } from '../../images/icons/index';
 import plans from '../Plans/content.json';
 import 'aos/dist/aos.css';
 import jQuery from 'jquery';
@@ -156,6 +156,40 @@ const Home = () => {
               {
                 plans?.length > 0 ? plans.map((content, i) => <Plan content={content} key={i} />) : <Loading />
               }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="contact">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="clipper"></div>
+              <img src={ecommerceImg} alt="" />
+            </div>
+            <div className="col-md-6">
+              <h1 className="title gradient">
+                Contact Me
+              </h1>
+              <div className="box_contact">
+                <div className="maploc">
+                  <iframe src="https://maps.google.com/maps?q=cive hostels block 4&t=&z=10&ie=UTF8&iwloc=&output=embed" frameBorder="0" title='Frame Map'></iframe>
+                </div>
+                {/* <div className="location">
+
+                  <span>Location:</span><span>The University of Dodoma (CIVE) - Tanzania</span>
+                </div> */}
+                <div className="textme">
+                  <input type="text" placeholder='Name' />
+                  <input type="text" placeholder='Email' />
+                </div>
+                <div className="textme">
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div className="textme">
+                  <button><span className='gradient'>WhatsApp</span></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

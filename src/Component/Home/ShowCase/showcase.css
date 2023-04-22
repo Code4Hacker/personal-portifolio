@@ -63,6 +63,9 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+.card_Case .foil .button{
+    font-size: small;
+}
 .crd iframe, .crd img{
     position: relative;
     width: 100%;
