@@ -138,7 +138,7 @@
 
 .gradient {
     color: transparent;
-    background: linear-gradient(-90deg, var(--pink), var(--blue));
+    background: linear-gradient(-60deg, var(--pink), var(--blue));
     background-clip: text;
     -webkit-background-clip: text;
 }

@@ -6,7 +6,7 @@ const UseFetch = (API) => {
         const find_data = async() => {
             const response = await fetch(API);
             const data = await response.json();
-            setPost(data.data);
+            setPost(data.tutorials);
         }
         find_data();
     },[API]);

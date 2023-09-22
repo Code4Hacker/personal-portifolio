@@ -10,7 +10,8 @@ import 'aos/dist/aos.css';
 import jQuery from 'jquery';
 import AOS from 'aos';
 import Plan from '../Plans/Plan';
-const API_URL = 'https://geminimaster.onrender.com/api/gemini-posts?populate=*';
+// const API_URL = 'https://geminimaster.onrender.com/api/gemini-posts?populate=*';
+const API_URL = 'http://localhost/personal-portifolio-php/api_tutorials.php';
 const Home = () => {
   AOS.init();
   const preLoader = () => {
@@ -27,7 +28,6 @@ const Home = () => {
   const { post } = UseFetch(API_URL);
   
   useEffect(() => { 
-    preLoader();
     window.onkeydown = function(){
       const newAtr = document.createElement("div");
       if(name.length > 6 && email.length > 9 && text.length > 20){
@@ -75,7 +75,7 @@ const Home = () => {
         </div>
         <div className="row">
           {
-            post?.length > 0 ? post.map((post) => <ShowCase result={post} key={post.id} />) : <Loading />
+            post?.length > 0 ? post.map((post) => <ShowCase result={post} key={post.tId} />) : <Loading />
           }
         </div>
         {
