@@ -11,7 +11,7 @@ import jQuery from 'jquery';
 import AOS from 'aos';
 import Plan from '../Plans/Plan';
 // const API_URL = 'https://geminimaster.onrender.com/api/gemini-posts?populate=*';
-const API_URL = 'http://localhost/personal-portifolio-php/api_tutorials.php';
+const API_URL = 'http://192.168.31.171/personal-portifolio-php/api_tutorials.php';
 const Home = () => {
   AOS.init();
   const preLoader = () => {
@@ -94,12 +94,18 @@ const Home = () => {
             </div>
           </div>
           <div className="col-md-12">
-            <div className='row'>
+            <div className='row' style={{"overflow-x":"scroll"}}>
               <div className="col-1 barge">
                 <a href="https://www.credly.com/badges/5d6585a4-be08-47ea-93b1-c651488fdee6/public_url" target="_blank" rel="noopener noreferrer" className="image">
-                  <img src={barge} alt="Cisco Network" />
+                  <img src={barge} alt="Cisco Network" className='barges' />
                 </a>
               </div>
+              <div className="col-1 barge">
+                <a href="https://www.credly.com/badges/c237bf2c-acb8-457f-b1fa-962732d25a3d/public_url" target="_blank" rel="noopener noreferrer" className="image">
+                  <img src={"https://images.credly.com/size/340x340/images/054913b2-e271-49a2-a1a4-9bf1c1f9a404/CyberEssentials.png"} alt="Cisco Network" className='barges' />
+                </a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -115,58 +121,80 @@ const Home = () => {
           <div className="col-xl-8">
             <div className="row">
               <div className="col-2 skill" data-aos="zoom-in">
-                <img src={bootstrapIcon} alt="" className="skills" />
+                <img src={bootstrapIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
-                <img src={jsIcon} alt="" className="skills" />
+                <img src={jsIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
-                <img src={reactIcon} alt="" className="skills" />
-              </div>
-              <div className="col-2 skill" data-aos="zoom-in">
-                <div className="basic">Basic</div>
-                <img src={gitIcon} alt="" className="skills" />
-              </div>
-              <div className="col-2 skill" data-aos="zoom-in">
-                <img src={githubIcon} alt="" className="skills" />
-              </div>
-              <div className="col-2 skill" data-aos="zoom-in">
-                <img src={strapiIcon} alt="" className="skills" />
-              </div>
-              <div className="col-2 skill" data-aos="zoom-in">
-                <img src={cloudinaryIcon} alt="" className="skills" />
-              </div>
-              <div className="col-2 skill" data-aos="zoom-in">
-                <img src={batchIcon} alt="" className="skills" />
-              </div>
-              <div className="col-2 skill" data-aos="zoom-in">
-                <img src={cssIcon} alt="" className="skills" />
+                <img src={reactIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
                 <div className="basic">Basic</div>
-                <img src={linuxIcon} alt="" className="skills" />
+                <img src={gitIcon} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={githubIcon} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={strapiIcon} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={cloudinaryIcon} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={batchIcon} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={cssIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
                 <div className="basic">Basic</div>
-                <img src={phpIcon} alt="" className="skills" />
+                <img src={linuxIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
                 <div className="basic">Basic</div>
-                <img src={pythonIcon} alt="" className="skills" />
+                <img src={phpIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
                 <div className="basic">Basic</div>
-                <img src={nodeIcon} alt="" className="skills" />
+                <img src={pythonIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
-                <img src={reactIcon2} alt="" className="skills" />
+                <div className="basic">Basic</div>
+                <img src={nodeIcon} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
-                <img src={sanityIcon} alt="" className="skills sanity" />
+                <img src={reactIcon2} alt="" className="skills" loading="lazy"/>
               </div>
               <div className="col-2 skill" data-aos="zoom-in">
-                <img src={cppIcon} alt="" className="skills" />
+                <img src={sanityIcon} alt="" className="skills sanity" loading="lazy"/>
               </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={cppIcon} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/nolan/64/java-coffee-cup-logo.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/fluency/96/android.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/external-others-iconmarket/64/external-jsp-file-types-others-iconmarket.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+               <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/nolan/96/mongo-db.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/color/96/mysql-logo.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/color/96/adobe-xd--v1.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+              <div className="col-2 skill" data-aos="zoom-in">
+                <img src={"https://img.icons8.com/3d-fluency/188/adobe-photoshop.png"} alt="" className="skills" loading="lazy"/>
+              </div>
+              
             </div>
             <div className="col-xl-12">
               <div className="headline">
