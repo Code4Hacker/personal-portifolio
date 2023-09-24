@@ -28,6 +28,7 @@ const Home = () => {
   const { post } = UseFetch(API_URL);
   
   useEffect(() => { 
+    preLoader();
     window.onkeydown = function(){
       const newAtr = document.createElement("div");
       if(name.length > 6 && email.length > 9 && text.length > 20){
