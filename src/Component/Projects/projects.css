@@ -1,0 +1,33 @@
+.banner_container{
+    /* width: 100%; */
+    margin: 40px;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    background-color: var(--drk-g);
+    height:300px;
+    /* border: 1px solid var(--drk-f); */
+}
+.banner_container .shadows{
+    border-radius: 50px;
+    opacity: 30%;
+    background: linear-gradient(60deg, var(--blue-2), var(--pink-2));
+}
+.search_banner{
+    position: absolute;
+    top:100%;
+    width: 350px;
+    left: 50%;
+    border-radius: 10px;
+    background-color: var(--drk-f);
+    padding: 10px;
+    transform: translate(-50%, -60%);
+}
+.search_banner input{
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    background: none;
+    border: none;
+}

@@ -16,6 +16,7 @@ html, body{
     --blue-2:rgb(5, 5, 133);
     --trans-black:rgba(0, 0, 0, 0.158);
     --drk-g:rgb(54, 54, 54);
+    --drk-f:rgb(31, 31, 31);
 }
 .center{
     justify-content: center;
