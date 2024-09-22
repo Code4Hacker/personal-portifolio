@@ -3,20 +3,25 @@
     font-family: 'Tektur';
     src: url(./Assets/Tektur-VariableFont_wdth\,wght.ttf);
 }
-html, body{
-    font-family: 'Tektur', cursive !important;
+html, body, *{
+    /* font-family: 'Tektur', cursive !important; */
+    font-family: "Work Sans", sans-serif !important;
 }
 :root{
     --dark:rgb(0, 0, 0);
     --wt:white;
     --light:rgb(206, 206, 206);
     --pink:rgb(255, 0, 76);
-    --blue:rgb(11, 109, 255);
+    --blue:rgb(255, 113, 11);
     --pink-2:rgb(156, 19, 88);
     --blue-2:rgb(5, 5, 133);
     --trans-black:rgba(0, 0, 0, 0.158);
     --drk-g:rgb(54, 54, 54);
     --drk-f:rgb(31, 31, 31);
+}
+p{
+    font-weight: 300;
+    font-size:1em !important;
 }
 .center{
     justify-content: center;
@@ -69,7 +74,7 @@ html, body{
     width: 100%;
     border-radius: 10px;
     height: 100%;
-    filter: hue-rotate(150deg);
+    filter: hue-rotate(240deg);
     border: 5px solid var(--pink-2);
     object-fit: cover;
 }
