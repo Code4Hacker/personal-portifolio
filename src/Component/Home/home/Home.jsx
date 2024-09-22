@@ -135,6 +135,22 @@ const Home = () => {
   const [email, setEmail] = useState('');
   const [text, setText] = useState('');
   const { post } = UseFetch(API_URL);
+  document.onmousemove = (evt) => {
+    let child = document.createElement("div");
+    child.setAttribute("class", "mouse_actor");
+    document.body.append(child);
+    child.style.left=`${evt.pageX}px`;
+    child.style.top=`${evt.pageY}px`;
+    child.style.backgroundColor=`rgb(${Math.floor((Math.random()*253)+1)}, ${Math.floor((Math.random()*253)+1)},${Math.floor((Math.random()*253)+1)})`
+    setTimeout(() => {
+      child.remove()
+    }, 3000);
+  }
+  // document.onmouseover= (evt) => {
+  //   setTimeout(() => {
+  //     document.querySelectorAll(".mouse_actor").forEach(child => child.remove());
+  //   }, 12000);
+  // }
   
   useEffect(() => { 
     preLoader();

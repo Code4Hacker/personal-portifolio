@@ -1,13 +1,17 @@
 * {
     transition: .3s ease-in-out;
     -webkit-transition: .3s ease-in-out;
+    cursor: none; 
 }
 
 .home {
     background-color: var(--dark);
     color: var(--light);
 }
+#root{
+    overflow-x: hidden;
 
+}
 .mrg-40-top {
     margin-top: 40px;
 }
@@ -38,6 +42,7 @@
     align-items: start;
     justify-items: start;
     background-color: rgb(22, 22, 22);
+    
     border-radius: 10px;
     margin: 10px;
 }
@@ -396,9 +401,37 @@
     border-radius: 50px;
     border: none !important;
 }
+.mouse_actor{
+    width: 50px;
+    height: 50px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50px;
+    background-color: rgba(135, 21, 21, 0.739);
+    z-index: 90;
+    position: absolute;
+    transition: 1.5s ease-in-out;
+    pointer-events: none;
+    animation: glow 1s linear infinite;
 
-
-
+}
+@keyframes glow{
+    0%{
+        width: 0px;
+        height: 0px;
+        /* background-color: rgb(255, 98, 0); */
+    }
+    50%{
+        width: 40px;
+        height: 40px;
+        /* background-color: rgb(137, 111, 255); */
+    }
+    100%{
+        width: 0px;
+        height: 0px;
+        /* background-color: red; */
+    }
+}
 
 
 

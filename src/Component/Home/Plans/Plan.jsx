@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Loading from '../../Loading/loading';
 const Plan = ({ content }) => {
     const { image, headline, technology, price_usd } = content;
     const [displayer, setDisplayer] = useState('false');
+
     return (
         <div className="col-md-3 crd card_Case mrg-10-10" data-aos="zoom-in">
             <div className="foil">
