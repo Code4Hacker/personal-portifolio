@@ -9,7 +9,7 @@ import jQuery from 'jquery';
 import AOS from 'aos';
 import Plan from '../Plans/Plan';
 
-import { ChevronDoubleDown } from 'react-bootstrap-icons';
+// import { ChevronDoubleDown } from 'react-bootstrap-icons';
 // const API_URL = 'https://geminimaster.onrender.com/api/gemini-posts?populate=*';
 // const API_URL = 'http://192.168.31.171/personal-portifolio-php/api_tutorials.php';
 const Home = () => {
