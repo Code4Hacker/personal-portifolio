@@ -182,9 +182,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-              <div className="absolute_scroller">
+              {/* <div className="absolute_scroller">
                 <button><ChevronDoubleDown/></button>
-              </div>
+              </div> */}
         </div>
       </div>
       <div className="container">
