@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
-import { Link } from 'react-router-dom';
 import UseFetch from '../../Hooks/useFetch';
-import ShowCase from '../ShowCase/ShowCase';
 import Loading from '../../Loading/loading';
 import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon, barge, ecommerceImg, flutterIcon, javaIcon, photoshopIcon, adobeXdIcon, figmaIcon, androidIcon, jspIcon, swiftIcon, mongoIcon } from '../../images/icons/index';
 import plans from '../Plans/content.json';

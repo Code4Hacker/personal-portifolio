@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Loading from '../../Loading/loading';
 const Plan = ({ content }) => {
     const { image, headline, technology, price_usd } = content;
