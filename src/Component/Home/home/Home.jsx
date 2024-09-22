@@ -132,7 +132,6 @@ const Home = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [text, setText] = useState('');
-  const { post } = UseFetch(API_URL);
   document.onmousemove = (evt) => {
     let child = document.createElement("div");
     child.setAttribute("class", "mouse_actor");
