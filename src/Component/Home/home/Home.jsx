@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
-import UseFetch from '../../Hooks/useFetch';
 import Loading from '../../Loading/loading';
 import { reactIcon, gitIcon, githubIcon, batchIcon, cssIcon, bootstrapIcon, strapiIcon, jsIcon, reactIcon2, cloudinaryIcon, phpIcon, pythonIcon, linuxIcon, nodeIcon, sanityIcon, cppIcon, barge, ecommerceImg, flutterIcon, javaIcon, photoshopIcon, adobeXdIcon, figmaIcon, androidIcon, jspIcon, swiftIcon, mongoIcon } from '../../images/icons/index';
 import plans from '../Plans/content.json';
@@ -11,7 +10,7 @@ import Plan from '../Plans/Plan';
 
 import { ChevronDoubleDown } from 'react-bootstrap-icons';
 // const API_URL = 'https://geminimaster.onrender.com/api/gemini-posts?populate=*';
-const API_URL = 'http://192.168.31.171/personal-portifolio-php/api_tutorials.php';
+// const API_URL = 'http://192.168.31.171/personal-portifolio-php/api_tutorials.php';
 const Home = () => {
   const badges = [
     {
